@@ -1,7 +1,7 @@
 PyEtherBalance  
 =============
 
-`pyetherbalance` is a python module for getting Ethereum and er20 balances. There are other modules like web3py out there, however the goal of this module is to be super light weight and not depend on too many other modules. 
+`pyetherbalance` is a python module for getting Ethereum and er20 token balances. There are other modules like web3py out there, however the goal of this module is to be super light weight and not depend on too many other modules. 
 
 Installation
 ------------

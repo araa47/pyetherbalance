@@ -1,6 +1,8 @@
 import decimal
 import requests
 import json
+from .erc20tokens  import tokens 
+
 
 class PyEtherBalance(object):
 	def __init__(self, node_url, erc20_tokens_json=None):
@@ -12,17 +14,10 @@ class PyEtherBalance(object):
 		#"ZRX": {'symbol': 'ZRX', 'address': '0xE41d2489571d322189246DaFA5ebDe1F4699F498', 'decimals': 18, 'name': '0x Project'}}
 		# If not passed use custom json
 		if erc20_tokens_json is None:
-			self.erc20_tokens = self.load_erc20tokens('erc20.json')
+			self.erc20_tokens = tokens
 		# if passed use the json object passed 
 		else:
 			self.erc20_tokens = erc20_tokens_json
-	
-	# Read json file and load as dict 
-	@staticmethod
-	def load_erc20tokens(filename):
-		with open(filename) as f:
-			data = json.load(f)
-		return data 
 	
 	# function to add custom token to tokens 
 	def add_token(self, token, details):
