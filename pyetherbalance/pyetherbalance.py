@@ -1,7 +1,7 @@
 import decimal
 import requests
 import json
-from .erc20tokens  import tokens 
+from pyetherbalance.erc20tokens import tokens 
 
 
 class PyEtherBalance(object):

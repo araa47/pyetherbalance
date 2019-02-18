@@ -1,1 +1,2 @@
-from .pyetherbalance import PyEtherBalance
+from pyetherbalance.pyetherbalance import PyEtherBalance
+from pyetherbalance.erc20tokens import tokens 
